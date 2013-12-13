@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomTableViewSectionHeadersViewController : UIViewController
+@interface CustomTableViewSectionHeadersViewController
+    : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

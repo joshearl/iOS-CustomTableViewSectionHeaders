@@ -50,11 +50,18 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *headerView;
     
-    headerView = [[UIView alloc] init];
+    UIView *headerView = [[UIView alloc] init];
     
     [headerView setBackgroundColor:[UIColor blackColor]];
+    
+    UILabel *titleLabel = [[UILabel alloc] init];
+    
+    [titleLabel setText: @"Custom Header"];
+    [titleLabel setTextColor:[UIColor whiteColor]];
+    [titleLabel setFrame:CGRectMake(15, 0, 300, 20)];
+    
+    [headerView addSubview:titleLabel];
 
     return headerView;
 }

@@ -49,4 +49,14 @@
     return cell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *headerView;
+    
+    headerView = [[UIView alloc] init];
+    
+    [headerView setBackgroundColor:[UIColor blackColor]];
+
+    return headerView;
+}
+
 @end
